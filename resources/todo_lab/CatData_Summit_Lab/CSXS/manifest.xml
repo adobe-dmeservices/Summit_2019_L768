@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- TODO LAB 1.2 BundleID -->
+<ExtensionManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ExtensionBundleId="PLACE EXTENSIONBUNDLEID HERE" ExtensionBundleVersion="1.0" Version="9.0">
+    <ExtensionList>
+        <!-- TODO LAB 1.3 ExtensionID -->
+        <Extension Id="PLACE EXTENSION ID HERE" Version="1.0"/>
+    </ExtensionList>
+    <ExecutionEnvironment>
+        <HostList>
+            <!-- TODO LAB 1.4 Define Host-->
+        </HostList>
+        <LocaleList>
+            <Locale Code="All"/>
+        </LocaleList>
+        <RequiredRuntimeList>
+            <!-- TODO LAB 1.5 CEP Runtime-->
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+    <DispatchInfoList>
+        <!-- TODO LAB 1.6 ExtensionID-->
+        <Extension Id="PLACE EXTENSION ID FROM LAB 1.3 SECTION">
+            <DispatchInfo>
+                <Resources>
+                    <!-- TODO LAB 1.6 MainPath & ScriptPath -->
+                    <CEFCommandLine></CEFCommandLine>
+                </Resources>
+                <Lifecycle>
+                    <AutoVisible>true</AutoVisible>
+                </Lifecycle>
+                <UI>
+                    <!-- TODO LAB 1.6 Type & Menu title -->
+                    <Geometry>
+                        <Size>
+                            <Height>580</Height>
+                            <Width>334</Width>
+                        </Size>
+                        <MaxSize>
+                            <Height>800</Height>
+                            <Width>1200</Width>
+                        </MaxSize>
+                        <MinSize>
+                            <Height>400</Height>
+                            <Width>600</Width>
+                        </MinSize>
+                    </Geometry>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
+</ExtensionManifest>

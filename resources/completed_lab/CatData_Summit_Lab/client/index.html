@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/leaflet.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <title>CatData Summit 2019 Lab</title>
+</head>
+
+<body style="zoom:80%">
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="javascript:location.reload(true)">
+      <img src="./images/logo.png" width="364px" height="40px" />
+    </a>
+  </nav>
+  <div class="container">
+    <div>
+      <img id="img_thumb" src=".\images\unavailable-image.jpg" class="img-thumbnail" />
+    </div>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="cat_name">Name</label>
+          <input class="form-control" id="cat_name" type="text">
+        </div>
+        <div class="form-group">
+          <label for="cat_breed">Cat Breed</label>
+          <select multiple class="form-control" id="cat_breed">
+            <option>Abyssinian</option>
+            <option>American Shorthair</option>
+            <option>Birman</option>
+            <option>Maine Coon</option>
+            <option>Oriental</option>
+            <option>Persian</option>
+            <option>Ragdoll</option>
+            <option>Siamese</option>
+            <option>Sphynx</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="cat_age">Age</label>
+          <input class="form-control" type="number" min="0" max="30" value="1" id="cat_age">
+        </div>
+        <div class="form-group">
+          <label for="cat_gender">Gender</label>
+          <select class="form-control" id="cat_gender">
+            <option>Female</option>
+            <option>Male</option>
+          </select>
+        </div>
+        <div class="form-group ">
+          <label for="GPS">GPS Location Map</label>
+          <div id="mapid" style="height:250px"></div>
+        </div>
+        <div class="form-group ">
+          <label for="predictedTags">Top 10 Predicted Tags</label>
+          <textarea class="form-control" id=predictedTags type="text" placeholder="Tag unavailable" rows="10" style="overflow:hidden;resize:none;" readonly></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="save();">Save</button>
+      </form>
+    </div>
+
+  </div>
+  <script type="text/javascript" src="./js/libs/jquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="./js/libs/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/libs/leaflet.js"></script>
+  <script type="text/javascript" src="./js/libs/lodash.min.js"></script>
+  <script type="text/javascript" src="./js/libs/CSInterface.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+  <script type="text/javascript" src="./js/utils.js"></script>
+</body>
+
+</html>
